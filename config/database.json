@@ -1,0 +1,12 @@
+{ "development":
+  { "driver"	:   "mongoose"
+  , "url"		:	"mongodb://localhost/rideshare-development"
+  }
+, "test":
+  { "driver":   "memory"
+  }
+, "production":
+  { "driver":   "mongoose"
+  , "url"		:	"mongodb://localhost/rideshare-production"
+  }
+}
