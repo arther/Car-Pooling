@@ -36,14 +36,10 @@ gem 'formtastic-bootstrap'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
-
-group :development do
-  gem 'nifty-generators'
-end
 
 group :development, :test do
   gem 'rspec-rails'
