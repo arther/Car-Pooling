@@ -7,12 +7,14 @@ gem 'rails', '3.2.8'
 
 gem 'mongoid'
 
+gem 'haml-rails'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem "twitter-bootstrap-rails"
+  gem 'twitter-bootstrap-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -21,6 +23,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'formtastic-bootstrap'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -37,10 +41,15 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-group :test, :development do
-  gem "rspec-rails", "~> 2.0"
+group :development do
+  gem 'nifty-generators'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
   gem 'jasmine-rails'
-  gem "jasminerice"
+  gem 'jasminerice'
+  gem 'shoulda-matchers'
 end
 
 group :test do
